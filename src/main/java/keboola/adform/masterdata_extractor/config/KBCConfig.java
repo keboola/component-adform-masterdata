@@ -6,7 +6,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  *
@@ -86,7 +85,7 @@ public class KBCConfig {
         this.params = params;
     }
 
-    public Map<Integer, KBCOutputMapping> getOutputTables() {
+    public List<KBCOutputMapping> getOutputTables() {
         return this.storage.getOutputTables().getTables();
     }
 }

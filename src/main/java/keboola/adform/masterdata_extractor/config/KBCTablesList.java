@@ -4,7 +4,7 @@ package keboola.adform.masterdata_extractor.config;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.List;
 
 /**
  *
@@ -14,20 +14,20 @@ import java.util.Map;
 public class KBCTablesList {
 
     @JsonProperty("tables")
-    private Map<Integer, KBCOutputMapping> tables;
+    private List<KBCOutputMapping> tables;
 
     public KBCTablesList() {
     }
 
-    public KBCTablesList(Map<Integer, KBCOutputMapping> tables) {
+    public KBCTablesList(List<KBCOutputMapping> tables) {
         this.tables = tables;
     }
 
-    public Map<Integer, KBCOutputMapping> getTables() {
+    public List<KBCOutputMapping> getTables() {
         return tables;
     }
 
-    public void setTables(Map<Integer, KBCOutputMapping> tables) {
+    public void setTables(List<KBCOutputMapping> tables) {
         this.tables = tables;
     }
 }
